@@ -33,8 +33,7 @@
         <module>zg-starter-ribbon-hystrix</module>
         <module>zg-starter-zuul</module>
         <module>zg-starter-config-server</module>
-        <module>zg-starter-config-dev</module>
-        <module>zg-starter-config-prod</module>
+        <module>zg-starter-config-service-demo</module>
     </modules>
 
     <dependencyManagement>

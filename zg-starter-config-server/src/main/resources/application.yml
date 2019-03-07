@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: ${env}
+    active: dev
   application:
     name: config-server
   cloud:
@@ -8,6 +8,8 @@ spring:
       label: master
       server:
         git:
-          searchPaths:
+          searchPaths: config
           username:
           password:
+server:
+  port: 8794

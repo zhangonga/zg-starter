@@ -1,7 +1,7 @@
 spring:
-  active: dev
+  profiles: dev
   cloud:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/zhangonga/zg-starter-config
