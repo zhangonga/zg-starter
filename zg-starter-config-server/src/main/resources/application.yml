@@ -11,5 +11,8 @@ spring:
           searchPaths: config
           username:
           password:
+
 server:
   port: 8794
+  servlet:
+    contextPath: /config/server
