@@ -1,5 +1,5 @@
 server:
-  port: 8789
+  port: 8788
 
 # 在edit configuration中勾选上allow parallel run, 然后修改端口号，可以启动多个实例。
 spring:
