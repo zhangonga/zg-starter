@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: ${env}
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          searchPaths:
+          username:
+          password:

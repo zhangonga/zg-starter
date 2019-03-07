@@ -1,0 +1,17 @@
+server:
+  port: 8793
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8787/eureka/
+
+spring:
+  application:
+    name: zuul
+
+zuul:
+  routes:
+    service-demo:
+      path: /service-demo/**
+      serviceId: service-demo
