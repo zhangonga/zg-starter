@@ -8,11 +8,14 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    # eureka高可用集群，本地启动记得修改host文件，同一个hostname不同的端口，集群不生效
+    # hostname: eurekaServer1
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      # defaultZone: http://eurekaServer2:9494/eureka
   server:
     waitTimeInMsWhenSyncEmpty: 0
     enableSelfPreservation: false

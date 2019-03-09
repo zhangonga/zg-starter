@@ -25,6 +25,14 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
+        <!--启动服务链路追踪很简单，所有的微服务引入zipkin，然后启动zipkin（java -jar zipkin-server-2.10.1-exec.jar）服务，配置zipkin url即可-->
+        <!--http://localhost:9411/zipkin/-->
+        <!--整个链路上的所有微服务都要加入zipkin，包括网关，有一个地方没有加入，zipkin就监控不到-->
+        <!--通过zipkin发现zuul网关贼耗时-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-zipkin</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
     <build>
         <plugins>

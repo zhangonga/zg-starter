@@ -20,6 +20,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--启动服务链路追踪很简单，所有的微服务引入zipkin，然后启动zipkin（java -jar zipkin-server-2.10.1-exec.jar）服务，配置zipkin url即可-->
+        <!--http://localhost:9411/zipkin/-->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>-->
     </dependencies>
     <build>
         <plugins>

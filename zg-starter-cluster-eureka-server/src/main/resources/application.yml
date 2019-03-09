@@ -1,0 +1,19 @@
+server:
+  port: 9494
+
+spring:
+  application:
+    name: cluster-eureka-server
+
+eureka:
+  instance:
+    # eureka高可用集群，本地启动记得修改host文件
+    hostname: eurekaServer2
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eurekaServer1:8787/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+    enableSelfPreservation: false

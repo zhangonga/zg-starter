@@ -9,6 +9,8 @@ eureka:
 spring:
   application:
     name: feign
+#  zipkin:
+#    baseUrl: http://localhost:9411
 
 # D版本后的spring cloud中feign集成了hystrix断路器，所以就不再新建工程了
 # 设置hystrix打开。
