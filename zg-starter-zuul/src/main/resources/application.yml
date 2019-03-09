@@ -10,11 +10,12 @@ spring:
   application:
     name: zuul
 
-zuul:
-  routes:
-    service-demo:
-      path: /service-demo/**
-      serviceId: service-demo
-    config-service-demo:
-      path: /config-service-demo/**
-      serviceId: config-service-demo
+# 如果不配置路由，默认使用/path作为serviceId
+#zuul:
+#  routes:
+#    service-demo:
+#      path: /service-demo/**
+#      serviceId: service-demo
+#    config-service-demo:
+#      path: /config-service-demo/**
+#      serviceId: config-service-demo
