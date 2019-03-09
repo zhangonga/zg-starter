@@ -35,6 +35,8 @@
         <module>zg-starter-config-server</module>
         <module>zg-starter-config-service-demo</module>
         <module>zg-starter-cluster-eureka-server</module>
+        <module>zg-starter-gateway</module>
+        <module>zg-starter-fescar</module>
     </modules>
 
     <dependencyManagement>

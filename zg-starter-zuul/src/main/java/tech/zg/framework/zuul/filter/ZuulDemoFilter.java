@@ -31,7 +31,6 @@ public class ZuulDemoFilter extends ZuulFilter {
      *
      * @return String
      * @author: 张弓
-     * @date: 2019/3/7
      * @version: 1.0.0
      */
     @Override
@@ -45,7 +44,6 @@ public class ZuulDemoFilter extends ZuulFilter {
      *
      * @return int
      * @author: 张弓
-     * @date: 2019/3/7
      * @version: 1.0.0
      */
     @Override
@@ -60,7 +58,6 @@ public class ZuulDemoFilter extends ZuulFilter {
      *
      * @return boolean
      * @author: 张弓
-     * @date: 2019/3/7
      * @version: 1.0.0
      */
     @Override
