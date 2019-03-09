@@ -13,7 +13,7 @@
     <description>阿里的分布式事务 Fast <![CDATA[&]]> Easy Commit And Rollback</description>
 
     <properties>
-        <fescar.version>0.2.2</fescar.version>
+        <fescar.version>0.3.0</fescar.version>
     </properties>
 
     <dependencies>
@@ -21,11 +21,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>com.alibaba.fescar</groupId>
             <artifactId>fescar-all</artifactId>
             <version>${fescar.version}</version>
-        </dependency>-->
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.fescar</groupId>
+            <artifactId>fescar-spring</artifactId>
+            <version>${fescar.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
