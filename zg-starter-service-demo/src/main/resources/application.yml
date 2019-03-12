@@ -1,5 +1,5 @@
 server:
-  port: 8788
+  port: 8789
 
 # 在edit configuration中勾选上allow parallel run, 然后修改端口号，可以启动多个实例。
 spring:
@@ -12,4 +12,4 @@ eureka:
   client:
     # tmd不知道为啥service-url不行...
     serviceUrl:
-      defaultZone: http://192.168.197.253:8787/eureka
+      defaultZone: http://localhost:8787/eureka
